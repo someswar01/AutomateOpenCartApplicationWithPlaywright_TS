@@ -1,0 +1,4 @@
+Error occurred while clicking Login link: Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//a[@class=\'list-group-item\'][normalize-space()=\'Login\']')
+
