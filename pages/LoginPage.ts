@@ -1,4 +1,4 @@
-import { Page,expect,Locator } from "@playwright/test";
+import { Page, expect, Locator } from "@playwright/test";
 
 export class LoginPage {
     private readonly page: Page;
@@ -24,7 +24,7 @@ export class LoginPage {
             console.log(`Error occurred while setting email: ${error}`);
             throw error;
         }
-    }                   
+    }
 
     async setPassword(password: string): Promise<void> {
         try {
@@ -33,7 +33,7 @@ export class LoginPage {
             console.log(`Error occurred while setting password: ${error}`);
             throw error;
         }
-    }           
+    }
 
     async clickLogin(): Promise<void> {
         try {
@@ -42,7 +42,7 @@ export class LoginPage {
             console.log(`Error occurred while clicking login button: ${error}`);
             throw error;
         }
-    }       
+    }
 
     async getErrorMessage(): Promise<string> {
         try {
@@ -51,7 +51,7 @@ export class LoginPage {
             console.log(`Error occurred while fetching error message: ${error}`);
             throw error;
         }
-    }   
+    }
 
 
 }

@@ -42,4 +42,27 @@ export class SearchResultsPage {
         return false;
     }
 
+    async selectProduct(productName: string): Promise<ProductPage | null> {
+
+        try {
+            const count = await this.searchProductors.count();
+            for (let i = 0; i < count; i++) {
+                const product = await this.searchProductors.nth(i);
+                const title = await product.textContent();
+                if (title === productName) {
+                    await product.click();
+                    return new ProductPage(this.page);
+                }
+            }
+        } catch (error) {
+            console.log(`Error occurred while selecting product '${productName}': ${error}`);
+        }
+        return null;
+    }
+
+    async getProductCount(): Promise<number> {
+       
+            return await this.searchProductors.count();
+    }
+
     }

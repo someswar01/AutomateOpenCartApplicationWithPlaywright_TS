@@ -1,4 +1,4 @@
-import { Page , expect, Locator} from "@playwright/test";
+import { Page, expect, Locator } from "@playwright/test";
 
 export class HomePage {
     private readonly page: Page;
@@ -7,7 +7,7 @@ export class HomePage {
     private readonly lnkRegister: Locator;
     private readonly lnkLogin: Locator;
     private readonly txtSearchBox: Locator;
-    private readonly btnSearch: Locator;  
+    private readonly btnSearch: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -20,11 +20,11 @@ export class HomePage {
 
     async isHomePageDisplayed() {
         try {
-            let pageTitle:string = await this.page.title();
-            if(pageTitle){
+            let pageTitle: string = await this.page.title();
+            if (pageTitle) {
                 return true;
             }
-            
+
         } catch (error) {
             console.log(`Error occurred while verifying Home Page: ${error}`);
             throw error;
@@ -46,7 +46,7 @@ export class HomePage {
         } catch (error) {
             console.log(`Error occurred while clicking Register link: ${error}`);
             throw error;
-        }   
+        }
     }
 
     async clickLogin() {
@@ -55,7 +55,7 @@ export class HomePage {
         } catch (error) {
             console.log(`Error occurred while clicking Login link: ${error}`);
             throw error;
-        }   
+        }
     }
 
     async enterProductName(productName: string) {
@@ -75,5 +75,5 @@ export class HomePage {
             throw error;
         }
     }
-    
+
 }
