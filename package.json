@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test:master": "playwright test --grep @master",
-        "test:sanity": "playwright test --grep @sanity",
-        "test:regression": "playwright test --grep @regression",
-                "test:datadriven": "playwright test --grep @datadriven",
-
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:datadriven": "playwright test --grep @datadriven",
     "test:master:headed": "playwright test --grep @master --headed",
-    "test:sanity:headed": "playwright test --grep @sanity --debug"
-    
+    "test:sanity:headed": "playwright test --grep @sanity --headed",
+    "test:regression:headed": "playwright test --grep @regression --headed",
+
+    "test:sanity:debug": "playwright test --grep @sanity --debug"
   },
   "keywords": [],
   "author": "",

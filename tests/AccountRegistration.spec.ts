@@ -27,7 +27,7 @@ test.describe('Account Registration Tests', () => {
         await page.close();
     });
 
-    test('TC01: Verify that a user can register successfully with valid details @master @sanity @regression', async ({ page }) => {
+    test('TC01: Verify that a user can register successfully with valid details @master @regression', async ({ page }) => {
         await homePage.isHomePageDisplayed();
         await homePage.clickMyAccount();
         await homePage.clickRegister();     

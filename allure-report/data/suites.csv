@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7507","TC01: Verify that a user can register successfully with valid details","chromium","2026-05-18","passed","2026-05-18","Account Registration Tests","AccountRegistration.spec.ts","",""
+"","12084","should login successfully with valid credentials @sanity @regression","chromium","2026-05-25","passed","2026-05-25","","Login.spec.ts","",""
+"","6597","should login successfully with valid credentials @master @sanity @regression","chromium","2026-05-25","passed","2026-05-25","","Login.spec.ts","",""
+"","4885","should login successfully with valid credentials","chromium","2026-05-18","passed","2026-05-18","","Login.spec.ts","",""
+"","8731","TC01: Verify that a user can register successfully with valid details @master @sanity @regression","chromium","2026-05-25","passed","2026-05-25","Account Registration Tests","AccountRegistration.spec.ts","",""

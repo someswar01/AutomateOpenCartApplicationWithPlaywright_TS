@@ -28,7 +28,7 @@ test.afterEach(async ({ page }) => {
 });
 
 
-    test("should login successfully with valid credentials @master @sanity @regression", async () => {
+    test("should login successfully with valid credentials @sanity @regression", async () => {
         await homePage.clickMyAccount();
         await homePage.clickLogin();
         await loginPage.setEmail(config.email);
